@@ -2,6 +2,7 @@
 
 - [Mosfets](#mosfets) 
 - [RJ45 Ethernet Ports](#rj45-ethernet-ports) 
+- [WavTrigger] (#wavtrigger)
 
 
 
@@ -29,3 +30,6 @@ Using `Continuity` and `Voltage` settings on your multimeter to test connections
 
 <img src = "/Debugging/ref-images/RJ45-ETHERNET.png" width="650" alt="MOSFETS diagram">
 
+# WavTrigger
+
+- *Is RX to TX and TX to RX?*
