@@ -23,9 +23,6 @@
 - [5. Safety & Best Practices](#safety--best-practices)
 - [6. Component Library](#component-library)
 - [7. Project Templates](#project-templates)
-- [4. Safety & Best Practices](#safety--best-practices)
-- [5. Component Library](#component-library) 
-- [6. Project Templates](#project-templates)
 
 ---
 
