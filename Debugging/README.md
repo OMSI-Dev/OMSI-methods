@@ -2,7 +2,7 @@
 
 - [Mosfets](#mosfets) 
 - [RJ45 Ethernet Ports](#rj45-ethernet-ports) 
-- [WavTrigger] (#wavtrigger)
+- [WavTrigger](#wavtrigger)
 
 
 
@@ -11,8 +11,11 @@
 **Debugging Reverse Voltage Protection P-Channel and N-Channel Mosfets**
 
 <img src = "/Debugging/ref-images/MOSFETS.png" width="500" alt="MOSFETS diagram"> <img src = "/Debugging/ref-images/N-MOSFET.png" width="500" alt="MOSFETS diagram">
+*Note that two different mosfet form factors are displayed above*
 
-Using `Continuity` and `Voltage` settings on your multimeter to test connections on a `P-Mosfet` or `N-Mosfet`, reference the diagram above and use the chart below.
+**For a 12V system:** Use `Continuity` and `Voltage` multimeter settings to test connections on a `P-Mosfet` or `N-Mosfet`. 
+
+Using the diagram above and use the chart below.
 
 
 | # | Measurement points | Healthy reading | Faulty reading (meaning) |
