@@ -8,24 +8,30 @@
 
 # Mosfets
 
-**Debugging Reverse Voltage Protection P-Channel and N-Channel Mosfets**
+**Debugging Reverse Voltage Protection P-Channel and N-Channel MOSFETs**
 
 <img src = "/Debugging/ref-images/MOSFETS.png" width="500" alt="MOSFETS diagram"> <img src = "/Debugging/ref-images/N-MOSFET.png" width="500" alt="MOSFETS diagram">
-*Note that two different mosfet form factors are displayed above*
 
-**For a 12V system:** Use `Continuity` and `Voltage` multimeter settings to test connections on a `P-Mosfet` or `N-Mosfet`. 
+*Note that two different MOSFET form factors are displayed above.*
 
-Using the diagram above and use the chart below.
+## General MOSFET Testing
 
+Use `Continuity` and `Voltage` multimeter settings to test a P-Channel or N-Channel MOSFET. Set one test point as reference (negative probe on source), and measure to the other pins.
 
 | # | Measurement points | Healthy reading | Faulty reading (meaning) |
 |---|---|---|---|
-| 1 | **drain to source** | Open (OL) one way. About 0.4 to 0.7 V the other way in diode mode (body diode). | ~0 Ω both ways: Q5 failed short or has a solder bridge. |
-| 2 |  **gate to source** | Open or very high (OL) both ways. | Near 0 Ω: gate shorted to ground. |
-| 3 |**LED_DATA side of R5 to Q5 gate** | About 10K | Open: R5 or trace broken. ~0 Ω: R5 bridged. |
-| 4 | **drain to GND** | Open (OL) or very high. | ~0 Ω: LED return path permanently grounded, so LED stays lit. |
-| 5 | **drain to X1-1** (LED terminal) | ~0 Ω (just a trace). | Open: broken trace or bad solder joint. |
-| 6 | **gate to GND** | Open or very high (no gate pull-down in schematic). | ~0 Ω: gate stuck at ground. |
+| 1 | **Drain to Source** | Open (OL) one way. 0.4–0.7 V the other way in diode mode (body diode present). | ~0 Ω both ways: MOSFET has shorted or has a solder bridge. |
+| 2 | **Gate to Source** | Open or very high (OL) both ways. | Near 0 Ω: gate shorted to source or ground. |
+| 3 | **Gate bias resistor** (if present) | Continuity depends on circuit design (check schematic). | Open: resistor or trace broken. ~0 Ω when not expected: resistor bridged or shorted. |
+| 4 | **Drain to ground** | Depends on circuit topology (open if drain is floating). | ~0 Ω when not expected: drain permanently pulled to ground (load always on). |
+| 5 | **Drain to load connection** | ~0 Ω (should be a direct trace/wire). | Open: broken trace, cold solder joint, or corroded connection. |
+| 6 | **Gate pull-down/pull-up** | Depends on circuit design. Check for expected pull-down or pull-up resistor to bias gate. | ~0 Ω unexpectedly: gate stuck at bias rail. |
+
+**Key points:**
+- Always test in **diode mode** on the multimeter for accurate body diode readings
+- Compare results to the circuit schematic to verify expected topology
+- A shorted drain-to-source in both directions indicates component failure
+- Gate-to-source should always be isolated; any continuity indicates a problem
 
 # RJ45 Ethernet Ports
 
