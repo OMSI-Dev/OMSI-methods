@@ -80,9 +80,7 @@ Optimization and material guidance for FDM printing with the Elegoo system.
 
 ## Quick Reference Guides
 
-*(Suggested additions)*
-
-Consider creating concise one-page guides for:
+TODO create concise one-page guides for:
 - **Pinout Diagrams** - Common connectors and microcontroller pinouts
 - **Soldering Checklist** - Do's and don'ts for reliable joints
 - **Multimeter Testing Matrix** - Common measurements and expected ranges
@@ -92,9 +90,7 @@ Consider creating concise one-page guides for:
 
 ## Safety & Best Practices
 
-*(Suggested additions)*
-
-Important for a museum environment with volunteers and visitors:
+TODO
 - **Electrical Safety** - ESD precautions, voltage hazards, live circuit handling
 - **Tool Safety** - Soldering iron, hot glue, laser cutter, 3D printer safety
 - **Material Safety** - Filament types, solder fumes, laser-safe materials
@@ -105,9 +101,7 @@ Important for a museum environment with volunteers and visitors:
 
 ## Component Library
 
-*(Suggested additions)*
-
-Centralized reference for commonly used components:
+TODO Centralized reference for commonly used components:
 - **Microcontrollers** - Teensy 3.x/4.x pinouts and capabilities
 - **MOSFETs** - Part numbers, ratings, and application guidelines
 - **Connectors** - JST, Phoenix, 3.5mm, RJ45 specifications and wiring
@@ -119,9 +113,7 @@ Centralized reference for commonly used components:
 
 ## Project Templates
 
-*(Suggested additions)*
-
-Standardized documents to streamline new exhibit development:
+TODO Standardized documents to streamline new exhibit development:
 - **Exhibit Specification Template** - Electrical requirements checklist
 - **Wiring Diagram Template** - Standard symbols and layout conventions
 - **Assembly Work Instruction** - Step-by-step assembly procedure format
